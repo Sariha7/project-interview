@@ -1,126 +1,258 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>ita-ajax-example</title>
-	<link rel="stylesheet" type="text/css" href="/assets/dist/css/main.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-</head>
-<body>
-	<main class="main">
-		<div class="canvas">
-			<section class="plans">
-				<div class="plan">
-					<div class="plan__inner">
-						<div class="plan__speed">
-							<span>00 Mbps</span>
-						</div>
-						<!-- /.plan__illustration -->
-						<h2 class="plan__title">Insert Plan Name Here</h2>
-						<!-- /.plan__title -->
-						<div class="plan__price">
-							<span class="currency">&dollar;</span>
-							<span class="amount">XX</span>
-							<span class="per">XX<br>/mo.</span>
-						</div>
-						<!-- /.plan__price -->
-						<button class="plan__button">Order Now</button>
-						<div class="plan-features">
-							<ul class="plan-features__list">
-								<li class="plan-features__list-item">
-									<i class="plan-features__icon"></i>Plan feature goes here
-								</li>
-								<li class="plan-features__list-item">
-									<i class="plan-features__icon"></i>Plan feature goes here
-								</li>
-								<li class="plan-features__list-item">
-									<i class="plan-features__icon"></i>Plan feature goes here
-								</li>
-								<li class="plan-features__list-item">
-									<i class="plan-features__icon"></i>Plan feature goes here
-								</li>
-							</ul>
-						</div>
-					</div>
-					<!-- /.plan__inner -->
-				</div>
-				<!-- /.plan -->
-				<div class="plan">
-						<div class="plan__inner">
-							<div class="plan__speed">
-								<span>00 Mbps</span>
-							</div>
-							<!-- /.plan__illustration -->
-							<h2 class="plan__title">Insert Plan Name Here</h2>
-							<!-- /.plan__title -->
-							<div class="plan__price">
-								<span class="currency">&dollar;</span>
-								<span class="amount">XX</span>
-								<span class="per">XX<br>/mo.</span>
-							</div>
-							<!-- /.plan__price -->
-							<button class="plan__button">Order Now</button>
-							<div class="plan-features">
-								<ul class="plan-features__list">
-									<li class="plan-features__list-item">
-										<i class="plan-features__icon"></i>Plan feature goes here
-									</li>
-									<li class="plan-features__list-item">
-										<i class="plan-features__icon"></i>Plan feature goes here
-									</li>
-									<li class="plan-features__list-item">
-										<i class="plan-features__icon"></i>Plan feature goes here
-									</li>
-									<li class="plan-features__list-item">
-										<i class="plan-features__icon"></i>Plan feature goes here
-									</li>
-								</ul>
-							</div>
-						</div>
-						<!-- /.plan__inner -->
-					</div>
-					<!-- /.plan -->
-					<div class="plan">
-							<div class="plan__inner">
-								<div class="plan__speed">
-									<span>00 Mbps</span>
-								</div>
-								<!-- /.plan__illustration -->
-								<h2 class="plan__title">Insert Plan Name Here</h2>
-								<!-- /.plan__title -->
-								<div class="plan__price">
-									<span class="currency">&dollar;</span>
-									<span class="amount">XX</span>
-									<span class="per">XX<br>/mo.</span>
-								</div>
-								<!-- /.plan__price -->
-								<button class="plan__button">Order Now</button>
-								<div class="plan-features">
-									<ul class="plan-features__list">
-										<li class="plan-features__list-item">
-											<i class="plan-features__icon"></i>Plan feature goes here
-										</li>
-										<li class="plan-features__list-item">
-											<i class="plan-features__icon"></i>Plan feature goes here
-										</li>
-										<li class="plan-features__list-item">
-											<i class="plan-features__icon"></i>Plan feature goes here
-										</li>
-										<li class="plan-features__list-item">
-											<i class="plan-features__icon"></i>Plan feature goes here
-										</li>
-									</ul>
-								</div>
-							</div>
-							<!-- /.plan__inner -->
-						</div>
-						<!-- /.plan -->
-			</section>
-			<!-- /.plans -->
-		</div>
-		<!-- /.canvas -->
-	</main>
-	<!-- /.main -->
-	<script type="text/javascript" src="/assets/dist/js/main.js"></script>
-</body>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8" />
+      <title>project-interview</title>
+      <link rel="stylesheet" type="text/css" href="/assets/dist/css/main.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+      <header>
+         <div class="top-header-desktop hidden-mobile">
+            <ul class="header-contact">
+               <li>Dealers and Distributors</li>
+               <li>Commercial Service</li>
+            </ul>
+            <div class="second-header-desktop">
+               <div class="header-left hidden-mobile">
+                  <img src="images/pool-pros.jpg" alt="pool-pros-logo" class="pool-pros-header">
+               </div>
+               <div class="header-right hidden-mobile">
+                  <ul class="options">
+                     <li>Pools & Spas</li>
+                     <li>Supplies</li>
+                     <li>Resources</li>
+                     <li>Services</li>
+                  </ul>
+               <div class="search-box input-wrapper"><i class="header-primary-icon fa fa-map-marker" aria-hidden="true"></i><input class="input" type="text" placeholder="Find a Pool Pro"></li></div>
+               </div>
+            </div>
+         </div>
+         <div class="header-mobile hidden-desktop">
+            <img src="images/pool-pros.jpg" alt="pool-pros-logo" class="pool-pros-header">
+            <form>
+               <div class="input-wrapper">
+                  <i class="header-primary-icon fa fa-map-marker" aria-hidden="true"></i><input class="input" type="text" placeholder="Find a Pro">
+               </div>
+            </form>
+            <img class="hamburger-bars" src="images/hamburger.png" alt="hamburger-bars">
+         </div>
+         <div class="image-water-mobile hidden-desktop">
+         </div>
+         <div class="image-water-desktop hidden-mobile">
+            <!-- <img src="images/water-image-desktop.jpg" alt="water"> -->
+         </div>
+      </header>
+      <section class="banner hidden-mobile">
+         <p class="banner-dealer">7 dealers in 28226</p>
+         <p>Filter Results</p>
+         <ul class="options-list-desktop">
+            <li>
+               <input type="checkbox" id="option-service" name="check" value="check-value">
+               <label for="option-service">Service</label>
+            </li>
+            <li>
+               <input type="checkbox" id="option-Installation" name="check" value="check-value">
+               <label for="option-service">Installation</label>
+            </li>
+            <li>
+               <input type="checkbox" id="option-Residential" name="check" value="check-value">
+               <label for="option-service">Residential</label>
+            </li>
+            <li>
+               <input type="checkbox" id="option-Commerical" name="check" value="check-value">
+               <label for="option-service">Commerical</label>
+            </li>
+         </ul>
+      </section>
+      <section class="options-list-container hidden-desktop">
+         <div class="outer-wrapper">
+            <p class="dealers-7">7 dealers in 28226</p>
+            <div class="filter-results">
+               <p>Filter Results</p>
+            </div>
+         </div>
+         <form class="options-list">
+            <ul class="service-selection-items">
+               <li class="hidden-desktop">
+                  <input type="checkbox" id="option-service" name="check" value="check-value">
+                  <label for="option-service">Service</label>
+               </li>
+               <li>
+                  <input type="checkbox" id="option-Installation" name="check" value="check-value">
+                  <label for="option-service">Installation</label>
+               </li>
+               <li>
+                  <input type="checkbox" id="option-Residential" name="check" value="check-value">
+                  <label for="option-service">Residential</label>
+               </li>
+               <li>
+                  <input type="checkbox" id="option-Commerical" name="check" value="check-value">
+                  <label for="option-service">Commerical</label>
+               </li>
+            </ul>
+         </form>
+      </section>
+      <main class="main">
+         <section class="dealers">
+            <div class="card-wrapper">
+               <div class="dealer">
+                  <h1 class="name">Name</h1>
+                  <hr class="hidden-mobile">
+                  <div class="phone-section hidden-desktop">
+                     <button class="phone-button"><i class="fa fa-phone" aria-hidden="true"></i><span class="tap">Tap to call</span><span class="phone1">1.888.888.8888</span></button>
+                  </div>
+                  <div class="phone-desktop hidden-mobile">
+                     <img src="images/phone2-icon.png" alt="phone-icon" class="phone2-icon"><span class="desktop-phone-number">1.888.888.8888</span>
+                  </div>
+                  <p class="talk">Can't talk now? Click below to send an email.</p>
+                  <div class="contact-box">
+                     <button class="mail-button"><img class="mail" src="images/mail.png" alt="mail-icon">
+                     <span class="contact">Contact this Pro</span></button>
+                  </div>
+                  <ul class="hours">
+                     <li>Business Hours</li>
+                     <li class="weekHours">Weekdays</li>
+                     <li class="Saturday">Saturday</li>
+                     <li class="Sunday">Sunday- </li>
+                  </ul>
+                  <footer class="dealers-footer">
+                     <ul class="dealer-footer-left">
+                        <li><img class="dealer-icon" src="images/star.png" alt="star-icon">Installation Pro</li>
+                        <li><img class="dealer-icon" src="images/home.png" alt="home-icon">Residential Pro</li>
+                     </ul>
+                     <div class="dealer-footer-right">
+                        <span><img class="dealer-icon" src="images/gear.png" alt="gear-icon">Service Pro</span>
+                     </div>
+                  </footer>
+               </div>
+            </div>
+            <div class="card-wrapper">
+               <div class="dealer">
+                  <h1 class="name">Name</h1>
+                  <hr class="hidden-mobile">
+                  <div class="phone-section hidden-desktop">
+                     <button class="phone-button"><i class="fa fa-phone" aria-hidden="true"></i><span class="tap">Tap to call</span><span class="phone1">1.888.888.8888</span></button>
+                  </div>
+                  <div class="phone-desktop hidden-mobile">
+                     <img src="images/phone2-icon.png" alt="phone-icon" class="phone2-icon"><span class="desktop-phone-number">1.888.888.8888</span>
+                  </div>
+                  <p class="talk">Can't talk now? Click below to send an email.</p>
+                  <div class="contact-box">
+                     <button class="mail-button"><img class="mail" src="images/mail.png" alt="mail-icon">
+                     <span class="contact">Contact this Pro</span></button>
+                  </div>
+                  <ul class="hours">
+                     <li>Business Hours</li>
+                     <li class="weekHours">Weekdays</li>
+                     <li class="Saturday">Saturday</li>
+                     <li class="Sunday">Sunday- </li>
+                  </ul>
+                  <footer class="dealers-footer">
+                     <ul class="dealer-footer-left">
+                        <li><img class="dealer-icon" src="images/star.png" alt="star-icon">Installation Pro</li>
+                        <li><img class="dealer-icon" src="images/home.png" alt="home-icon">Residential Pro</li>
+                     </ul>
+                     <div class="dealer-footer-right">
+                        <span><img class="dealer-icon" src="images/gear.png" alt="gear-icon">Service Pro</span>
+                     </div>
+                  </footer>
+               </div>
+            </div>
+            <div class="card-wrapper">
+               <div class="dealer">
+                  <h1 class="name">Name</h1>
+                  <hr class="hidden-mobile">
+                  <div class="phone-section hidden-desktop">
+                     <button class="phone-button"><i class="fa fa-phone" aria-hidden="true"></i><span class="tap">Tap to call</span><span class="phone1">1.888.888.8888</span></button>
+                  </div>
+                  <div class="phone-desktop hidden-mobile">
+                     <img src="images/phone2-icon.png" alt="phone-icon" class="phone2-icon"><span class="desktop-phone-number">1.888.888.8888</span>
+                  </div>
+                  <p class="talk">Can't talk now? Click below to send an email.</p>
+                  <div class="contact-box">
+                     <button class="mail-button"><img class="mail" src="images/mail.png" alt="mail-icon">
+                     <span class="contact">Contact this Pro</span></button>
+                  </div>
+                  <ul class="hours">
+                     <li>Business Hours</li>
+                     <li class="weekHours">Weekdays</li>
+                     <li class="Saturday">Saturday</li>
+                     <li class="Sunday">Sunday- </li>
+                  </ul>
+                  <footer class="dealers-footer">
+                     <ul class="dealer-footer-left">
+                        <li><img class="dealer-icon" src="images/star.png" alt="star-icon">Installation Pro</li>
+                        <li><img class="dealer-icon" src="images/home.png" alt="home-icon">Residential Pro</li>
+                     </ul>
+                     <div class="dealer-footer-right">
+                        <span><img class="dealer-icon" src="images/gear.png" alt="gear-icon">Service Pro</span>
+                     </div>
+                  </footer>
+               </div>
+            </div>
+            <div class="clearfix"></div>
+         </section>
+         <footer class="primary-footers">
+            <div class="primary-footer">
+               <img src="images/pool-pros-logo-footer.jpg" alt="pool-logo" class="pool-pros-logo2">
+               <div class="social-media">
+                  <p class="connect">CONNECT WITH US</p>
+                  <ul class="social-icons">
+                     <li><img src="images/twitter-icon.png" alt="twitter-icon" class="twitter-icon"></li>
+                     <li><img src="images/facebook-icon.png" alt="facebook-icon" class="facebook-icon"></li>
+                     <li><img src="images/youtube-icon.png" alt="youtube-icon" class="youtube-icon"></li>
+                  </ul>
+               </div>
+               <div class="clearfix"></div>
+            </div>
+            <div class="secondary-footer">
+               <p class="footer-service-info hidden-desktop"> Dealers and Distributors | Commercial Service</p>
+               <hr class="hidden-desktop">
+               <p class="main-footer-info"><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Pool Pros | Privacy Policy | Terms and Conditions</p>
+            </div>
+         </footer>
+      </main>
+      <div class="contact-form-full-wrapper js-modal">
+         <div class="contact-form-bg"></div>
+         <div class= "contact-form-full">
+            <header class="form-header">
+                  <p class="email">EMAIL</p>
+                  <h1 class="form-header-message">Premium Pools & Spas of Charlotte</h1>
+            </header>
+            <div class="contact-form-wrapper">
+               <p class="form-message">Fill out the form below and Premium Pools & Spas of Charlotte will get in touch.</p>
+               <div class="form-container">
+                  <form class="contact-form">
+                     <label for="flname">First and last name</label>
+                     <input type="text" id="fname" name="firstname">
+                     <label for="customer-phone-number">Phone number</label>
+                     <input type="text" id="customer-phone-number" name="customer-phone-number" >
+                     <label for="Email-address">Email address</label>
+                     <input type="text" id="Email-address" name="Email-address" >
+                     <label for="Comments-box">Comments or questions</label>
+                     <textarea id="subject" name="subject"></textarea>
+                     <p class="pool-question">Do you currently own a pool or spa?</p>
+                     <ul class="yes-no-list">
+                        <li>
+                           <input type="checkbox" id="yes" name=" yes" value="check-value">
+                           <label for="yes">Yes</label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="no" name="no" value="check-value">
+                           <label for="no">No</label>
+                        </li>
+                     </ul>
+                     <hr>
+                     <input class="send-button" type="submit" value="Send">
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script type="text/javascript" src="/assets/dist/js/main.js"></script>
+   </body>
 </html>
