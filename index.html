@@ -34,7 +34,7 @@
             <img src="images/pool-pros.jpg" alt="pool-pros-logo" class="pool-pros-header">
             <form>
                <div class="input-wrapper">
-                  <i class="header-primary-icon fa fa-map-marker" aria-hidden="true"></i><input class="input" type="text" placeholder="Find a Pro">
+                  <i class="header-primary-icon fa fa-map-marker" aria-hidden="true"></i><input class="input" type="text" placeholder="FIND A PRO">
                </div>
             </form>
             <img class="hamburger-bars" src="images/hamburger.png" alt="hamburger-bars">
@@ -114,18 +114,48 @@
                   </div>
                   <ul class="hours">
                      <li>Business Hours</li>
-                     <li class="weekHours">Weekdays</li>
-                     <li class="Saturday">Saturday</li>
-                     <li class="Sunday">Sunday- </li>
+                     <li class="weekHours">Weekdays ${dealer.data.weekHours.mon}</li>
+                     <li class="Saturday">Saturday ${dealer.data.weekHours.sat}</li>
+                     <li class="Sunday">Sunday ${dealer.data.weekHours.sun}</li>
                   </ul>
                   <footer class="dealers-footer">
-                     <ul class="dealer-footer-left">
+                     <ul class="dealer-footer-left js-certifications-list-${index}">
                         <li><img class="dealer-icon" src="images/star.png" alt="star-icon">Installation Pro</li>
                         <li><img class="dealer-icon" src="images/home.png" alt="home-icon">Residential Pro</li>
+                        <li><img class="dealer-icon" src="images/gear.png" alt="gear-icon">Service Pro</li>
+                        <li><img class="dealer-icon" src="images/users.png" alt="users-icon">Commercial Pro</li>
                      </ul>
-                     <div class="dealer-footer-right">
-                        <span><img class="dealer-icon" src="images/gear.png" alt="gear-icon">Service Pro</span>
-                     </div>
+                  </footer>
+               </div>
+            </div>
+            <div class="card-wrapper">
+               <div class="dealer">
+                  <h1 class="name">Name</h1>
+                  <hr class="hr-desktop hidden-mobile">
+                  <div class="phone-section hidden-desktop">
+                     <button class="phone-button"><i class="fa fa-phone" aria-hidden="true"></i><span class="tap">Tap to call</span><span class="phone1">1.888.888.8888</span></button>
+                  </div>
+                  <div class="phone-desktop hidden-mobile">
+                     <img src="images/phone2-icon.png" alt="phone-icon" class="phone2-icon"><span class="desktop-phone-number">1.888.888.8888</span>
+                  </div>
+                  <p class="talk">Can't talk now? Click below to send an email.</p>
+                  <div class="contact-box">
+                     <button class="mail-button"><img class="mail" src="images/mail.png" alt="mail-icon">
+                     <span class="contact">Contact this Pro</span></button>
+                  </div>
+                  <ul class="hours">
+                     <li>Business Hours</li>
+                     <li class="weekHours">Weekdays ${dealer.data.weekHours.mon}</li>
+                     <li class="Saturday">Saturday ${dealer.data.weekHours.sat}</li>
+                     <li class="Sunday">Sunday ${dealer.data.weekHours.sun}</li>
+                  </ul>
+                  <footer class="dealers-footer">
+                     <ul class="dealer-footer-left js-certifications-list-${index}">
+                        <li><img class="dealer-icon" src="images/star.png" alt="star-icon">Installation Pro</li>
+                        <li><img class="dealer-icon" src="images/home.png" alt="home-icon">Residential Pro</li>
+                        <li><img class="dealer-icon" src="images/gear.png" alt="gear-icon">Service Pro</li>
+                        <li><img class="dealer-icon" src="images/users.png" alt="users-icon">Commercial Pro</li>
+                     </ul>
                   </footer>
                </div>
             </div>
@@ -151,45 +181,12 @@
                      <li class="Sunday">Sunday- </li>
                   </ul>
                   <footer class="dealers-footer">
-                     <ul class="dealer-footer-left">
+                     <ul class="dealer-footer-left js-certifications-list-${index}">
                         <li><img class="dealer-icon" src="images/star.png" alt="star-icon">Installation Pro</li>
                         <li><img class="dealer-icon" src="images/home.png" alt="home-icon">Residential Pro</li>
+                        <li><img class="dealer-icon" src="images/gear.png" alt="gear-icon">Service Pro</li>
+                        <li><img class="dealer-icon" src="images/users.png" alt="users-icon">Commercial Pro</li>
                      </ul>
-                     <div class="dealer-footer-right">
-                        <span><img class="dealer-icon" src="images/gear.png" alt="gear-icon">Service Pro</span>
-                     </div>
-                  </footer>
-               </div>
-            </div>
-            <div class="card-wrapper">
-               <div class="dealer">
-                  <h1 class="name">Name</h1>
-                  <hr class="hidden-mobile">
-                  <div class="phone-section hidden-desktop">
-                     <button class="phone-button"><i class="fa fa-phone" aria-hidden="true"></i><span class="tap">Tap to call</span><span class="phone1">1.888.888.8888</span></button>
-                  </div>
-                  <div class="phone-desktop hidden-mobile">
-                     <img src="images/phone2-icon.png" alt="phone-icon" class="phone2-icon"><span class="desktop-phone-number">1.888.888.8888</span>
-                  </div>
-                  <p class="talk">Can't talk now? Click below to send an email.</p>
-                  <div class="contact-box">
-                     <button class="mail-button"><img class="mail" src="images/mail.png" alt="mail-icon">
-                     <span class="contact">Contact this Pro</span></button>
-                  </div>
-                  <ul class="hours">
-                     <li>Business Hours</li>
-                     <li class="weekHours">Weekdays</li>
-                     <li class="Saturday">Saturday</li>
-                     <li class="Sunday">Sunday- </li>
-                  </ul>
-                  <footer class="dealers-footer">
-                     <ul class="dealer-footer-left">
-                        <li><img class="dealer-icon" src="images/star.png" alt="star-icon">Installation Pro</li>
-                        <li><img class="dealer-icon" src="images/home.png" alt="home-icon">Residential Pro</li>
-                     </ul>
-                     <div class="dealer-footer-right">
-                        <span><img class="dealer-icon" src="images/gear.png" alt="gear-icon">Service Pro</span>
-                     </div>
                   </footer>
                </div>
             </div>
@@ -253,10 +250,10 @@
          </div>
       </div>
       <div class="menu-dropdown-wrapper js-menu-modal">
-         <div class="menu-dropdown hidden-desktop">
-            <div class="menu-dropdown-header">
-               <h1>Menu</h1>
-               <img class="x-vector" src="images/X-vector.png" alt="X mark">
+      <div class="menu-dropdown hidden-desktop">
+         <div class="menu-dropdown-header">
+            <h1>Menu</h1>
+            <img class="x-vector" src="images/X-vector.png" alt="X mark">
             </div class="menu-option-wrapper">
             <p class="menu-option">Pools & Spas<a class="next-link" href="tbd">next</a></p>
             <p class="menu-option">Supplies<a class="next-link" href="tbd">next</a></p>

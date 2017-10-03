@@ -46,7 +46,7 @@ $.get(`${api.base}`,function(data, status){
 			<div class="card-wrapper">
 				<div class="dealer">
 	                  <h1 class="name">${dealer.data.name}</h1>
-	                  <hr class="hidden-mobile">
+	                  <hr class="hr-desktop hidden-mobile">
 	                  <div class="phone-section hidden-desktop">
 	                     <button class="phone-button"><i class="fa fa-phone" aria-hidden="true"></i><span class="tap">Tap to call</span><span class="phone1">${dealer.data.phone1}</span></button>
 	                  </div>
@@ -86,7 +86,7 @@ $.get(`${api.base}`,function(data, status){
 					iconName = 'gear'
 					break;
 				case 'Commercial Pro':
-					iconName = 'star'
+					iconName = 'users'
 					break;
 				default:
 					iconName = 'star'

@@ -124,7 +124,7 @@ main {
 }
 
 .input{
-  width: 54px;
+  width: 70px;
   color: #216DDF;
 }
 
@@ -147,7 +147,7 @@ main {
 .input-wrapper{
     border: 2px solid #216DDF;
     height: 35px;
-    width: 110px;
+    width: 102px;
     border-radius: 3px;
 }
 
@@ -207,6 +207,7 @@ main {
     list-style: none;
     border: 1px solid #D8D8D8;
     box-shadow: 1px 3px 7px 1px #e5e5e5;
+    position: relative;
   }
 
   .dealer> *{
@@ -270,12 +271,13 @@ main {
   list-style: none;
   display: flex;
   flex-flow: wrap;
+  text-align: left;
 }
 
 .dealer-footer-left li{
     margin-bottom: 10px;
-    margin: auto;
     padding-top: 13px;
+    width: 50%;
 }
 
 .dealer-icon{
@@ -290,9 +292,10 @@ main {
     border-bottom: 1px solid #D8D8D8;
     clear: both;
     background-color: #f6f6f6;
-    padding-top: 25px;
+    padding-top: 19px;
     padding-left: 40px;
     padding-bottom: 39px;
+    height: 125px;
 }
 
 .dealers-footer> *{
@@ -497,12 +500,17 @@ input[type=submit]:hover {
 
 @media ( min-width: 1400px) {
 
-  .card-wrapper{
-    width: 30%;
+  .input-wrapper{
+   width: 119px;
   }
 
-  .dealer{
-    box-shadow: 1px 3px 6px 2px #D8D8D8;
+  .card-wrapper{
+    margin: 19px auto;
+
+  }
+
+  .card-wrapper{
+    width: 30%;
   }
 
   .hidden-desktop{
@@ -520,7 +528,7 @@ input[type=submit]:hover {
       font-size: 12px;
       padding-top: 16px;
       padding-bottom: 16px;
-      padding-right: 70px;
+      padding-right: 27px;
   }
   .header-contact li {
     display: inline-block;
@@ -590,10 +598,12 @@ input[type=submit]:hover {
     margin: 2% 5% 5% 5%;
   }
 
-  .dealer{
+  .dealer {
     border-radius: 8px;
     margin-right: 20px;
     margin: 0px;
+    position: relative;
+    box-shadow: 1px 3px 6px 2px #D8D8D8;
   }
   .phone2-icon{
     height: 30px;
@@ -624,7 +634,7 @@ input[type=submit]:hover {
   }
   .input{
       height: 24px;
-      width: 78px;
+      width: 92px;
       color: #216DDF;
   }
 
@@ -708,5 +718,13 @@ input[type=submit]:hover {
 }
 
 //End CSS for menu modal
+::placeholder{
+  color: #216DDF;
+  font-size: 12px;
+  font-weight: 700;
+}
 
-
+.hr-desktop{
+  position: absolute;
+  top: 79px;
+}
