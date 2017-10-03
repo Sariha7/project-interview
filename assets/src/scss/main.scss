@@ -694,25 +694,19 @@ input[type=submit]:hover {
 }
 
 .menu-dropdown-wrapper{
-/*    display: none;
- */   position: relative;
+   display: none;
+   position: relative;
 }
 
 .menu-dropdown{
-  width: 95%;
-  margin-top: 5px;
-  postion: absolute;
-  overflow: scroll;
-  top: 0;
-  x-index: 99;
+    position: fixed;
+    overflow: scroll;
+    top: 52px;
+    z-index: 99;
+    width: 100%;
+    background: white;
 }
 
 //End CSS for menu modal
 
 
-/* JS that does work 
-
-$( document ).on('click', '.hamburger-bars', function(){
-    $('.js-menu-modal').show();
-  });
-  $('body')hide(); */
