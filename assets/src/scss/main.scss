@@ -133,7 +133,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     padding-right: 7px;
-    box-shadow: 10px 10px 5px #888888 ;
+    box-shadow: 10px 5px 5px #BBBBBB;
 }
 
 .hidden-mobile{
@@ -206,7 +206,7 @@ main {
     margin: 0% 5%;
     list-style: none;
     border: 1px solid #D8D8D8;
-    box-shadow: 1px 3px 6px 2px #D8D8D8;
+    box-shadow: 1px 3px 7px 1px #e5e5e5;
   }
 
   .dealer> *{
@@ -275,6 +275,7 @@ main {
 .dealer-footer-left li{
     margin-bottom: 10px;
     margin: auto;
+    padding-top: 13px;
 }
 
 .dealer-icon{
@@ -301,7 +302,7 @@ main {
 
 .card-wrapper{
       box-shadow: 1px 5px 20px 0px #EDEDED;
-      width: 30%;
+      width: 100%;
       margin: auto;
 }
 
@@ -387,6 +388,7 @@ hr {
 }
 
 // Start modal css
+.contact-form-full-wrapper {
 input[type=text], textarea {
     width: 100%; 
     padding: 12px;  
@@ -491,8 +493,17 @@ input[type=submit]:hover {
 }
 
 // End modal CSS
+}
 
 @media ( min-width: 1400px) {
+
+  .card-wrapper{
+    width: 30%;
+  }
+
+  .dealer{
+    box-shadow: 1px 3px 6px 2px #D8D8D8;
+  }
 
   .hidden-desktop{
     display: none;
@@ -538,7 +549,7 @@ input[type=submit]:hover {
   }
 
   .second-header-desktop{
-    box-shadow: 10px 10px 5px #888888;
+    box-shadow: 10px 5px 5px #BBBBBB;
     padding: 22px 70px;
     overflow: hidden;
   }
@@ -621,17 +632,87 @@ input[type=submit]:hover {
     margin-top: -14px;
   }
   .image-water-desktop{
-        height: 200px;
-    background: url(../../../images/water-image-desktop.jpg) top left repeat-x red;
     background-size: cover;
-    margin-top: 30px;
+    background: url(../../../images/water-image-desktop.jpg) top left repeat-x;
+    height: 200px;
+    margin-top: 20px;
 
   }
 
-  .top-header-desktop{
+ /*  .top-header-desktop{
     box-shadow: 10px 10px 5px #888888;
-  }
+  } */
 
 }
 
+.menu-dropdown{
+    border-bottom: 5px solid #0BC9C8;
+    border-top: 5px solid #0BC9C8;
+/*     box-shadow: 10px 10px 10px 10px #BBBBBB;
+ */}
 
+.menu-dropdown-header{
+    position: relative;
+    position: relative;
+    height: 80px;
+    text-align: center;
+  h1{
+    color: #01529E;
+    font-size: 18px;
+    padding-top: 36px;
+    font-weight: 400;
+  }
+  img{
+    height: 17px;
+    position: absolute;
+    right: 25px;
+    top: 14px;
+    widows: 17px;
+  }
+}
+
+
+//Begin CSS for menu modal
+.menu-option {
+    background: #f6f6f6;
+    padding: 25px 15px 25px 15px;
+    margin-bottom: 2px;
+    color: #616161;
+    font-size: 18px;
+}
+
+.next-link{
+  color: #0BC9C8;
+  font-size: 20px;
+  text-decoration: none;
+  position: absolute;
+  right: 20px;
+}
+
+.menu-option-wrapper{
+  position: relative;
+}
+
+.menu-dropdown-wrapper{
+/*    display: none;
+ */   position: relative;
+}
+
+.menu-dropdown{
+  width: 95%;
+  margin-top: 5px;
+  postion: absolute;
+  overflow: scroll;
+  top: 0;
+  x-index: 99;
+}
+
+//End CSS for menu modal
+
+
+/* JS that does work 
+
+$( document ).on('click', '.hamburger-bars', function(){
+    $('.js-menu-modal').show();
+  });
+  $('body')hide(); */

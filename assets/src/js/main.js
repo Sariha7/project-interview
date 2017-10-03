@@ -5,6 +5,8 @@
 
 jQuery( document ).ready( function( $ ) {
 //attches it to the DOM instead of the mail button because the mail button can be replaced 
+	
+	$('.js-modal').hide();
 	$( document ).on( 'click', '.mail-button', function() {
 		$( '.js-modal' ).show();
 	});
@@ -12,7 +14,6 @@ jQuery( document ).ready( function( $ ) {
 	$( '.contact-form-bg' ).click( function() {
 		$( '.js-modal' ).hide();
 	});
-
 });
 
 
