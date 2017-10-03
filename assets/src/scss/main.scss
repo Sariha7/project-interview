@@ -110,627 +110,526 @@ html, body, div, span, object, iframe,
 
 
 
-$font-main-color: #3F3F3F;
-
 /* mobile version designed at 378px */
 
 main {
-  margin: 5px auto 0;
-/*  max-width: 960px;
-*/  text-align: center; }
-
-.header-mobile>*{
-  display: inline-block;
+    margin: 5px auto 0;
+    text-align: center;
 }
-
-.input{
-  width: 70px;
-  color: #216DDF;
+.header-mobile>* {
+    display: inline-block;
 }
-
-.header-mobile{
-    padding-top: 10px;
+.input {
+    color: #216DDF;
+    width: 70px;
+}
+.header-mobile {
+    box-shadow: 0px 0px 15px #BBBBBB;
     display: flex;
     justify-content: space-evenly;
     padding-right: 7px;
-    box-shadow: 0px 0px 15px #BBBBBB;
+    padding-top: 10px;
 }
-
-.hidden-mobile{
-  display: none;
+.hidden-mobile {
+    display: none;
 }
-
-.pool-pros-header{
+.pool-pros-header {
     height: 35px;
 }
-
-.input-wrapper{
+.input-wrapper {
+    border-radius: 3px;
     border: 2px solid #216DDF;
     height: 35px;
+    padding-top: 3px;
     width: 102px;
-    border-radius: 3px;
+}
+.fa-map-marker {
+    color: #216DDF;
+    padding-left: 5px;
     padding-top: 3px;
 }
-
-.fa-map-marker{
-  padding-left: 5px;
-  padding-top: 3px;
-  color: #216DDF;
-}
-
-.hamburger-bars{    
-    height: 40px;
-    width: 40px;
+.hamburger-bars {
     border-radius: 1007px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.58);
+    height: 40px;
     padding: 12px 5px;
-  }
-
-  .options-list-container{
-        background-color: #F6F6F6;
-        padding: 4%;
-  }
-
-  .outer-wrapper> *{
+    width: 40px;
+}
+.options-list-container {
+    background-color: #F6F6F6;
+    padding: 4%;
+}
+.outer-wrapper> * {
     display: inline-block;
-  }
-
-  .dealers-7{
+}
+.dealers-7 {
     color: #216DDF;
-  }
-
-  .filter-results{
+}
+.filter-results {
     float: right;
-  }
-
-  .options-list{
+}
+.options-list {
     background: #FFFFFF;
     border: 1px solid #D8D8D8;
-    padding: 5%;
     margin-top: 0%;
-  }
-
-  .service-selection-items li {
-        margin-bottom: 25px;
-        list-style: none;
-        font-size: 16px;
-        font-weight: 500;
-  }
-
-  .name{
+    padding: 5%;
+}
+.service-selection-items li {
+    font-size: 16px;
+    font-weight: 500;
+    list-style: none;
+    margin-bottom: 25px;
+}
+.name {
     font-size: 20px;
     font-weight: 400;
-    padding-bottom: 5%;
     margin-top: 33px;
-  }
-
-  .dealer {    
-    margin: 0% 5%;
-    list-style: none;
+    padding-bottom: 5%;
+}
+.dealer {
     border: 1px solid #D8D8D8;
     box-shadow: 1px 3px 7px 1px #e5e5e5;
-    position: relative;
-  }
-
-  .dealer> *{
     list-style: none;
-  }
-
-  .phone-button{
+    margin: 0% 5%;
+    position: relative;
+}
+.dealer> * {
+    list-style: none;
+}
+.phone-button {
     background-color: #216DDF;
-    padding: 10px;
     border-radius: 2px;
     border: none;
-    top: 10px;
-    font-size: 18px;
     color: white;
+    font-size: 18px;
     margin-left: 11px;
-  }
-  .tap{
+    padding: 10px;
+    top: 10px;
+}
+.tap {
     font-size: 10px;
     margin-right: 10px;
-  }
-.fa-phone:before{
-     background-color: #083D8C;
-    padding: 6px 7px;
-    margin-right: 13px;
 }
-
-.talk{
+.fa-phone:before {
+    background-color: #083D8C;
+    margin-right: 13px;
+    padding: 6px 7px;
+}
+.talk {
     font-size: 14px;
     padding: 20px;
 }
-
-.mail-button{
-    background: rgba(0,0,0,0.00);
+.mail-button {
+    background: rgba(0, 0, 0, 0.00);
+    border-radius: 3px;
     border: 1px solid #02C7C6;
     padding: 14px;
-    border-radius: 3px;
 }
-
-.mail{
-    width: 15px;
+.mail {
     height: 13px;
+    width: 15px;
 }
-
-.contact{
-    font-size: 15px;
+.contact {
     color: #083D8C;
+    font-size: 15px;
     padding-left: 12px;
 }
-
-.hours{
-      padding: 20px;
+.hours {
+    padding: 20px;
 }
-
-.hours li{
-  margin: 5px;
-  font-size: 14px;
-  font-weight: 400;
+.hours li {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px;
 }
-
 .dealer-footer-left {
-  list-style: none;
-  display: flex;
-  flex-flow: wrap;
-  text-align: left;
+    display: flex;
+    flex-flow: wrap;
+    list-style: none;
+    text-align: left;
 }
-
-.dealer-footer-left li{
+.dealer-footer-left li {
     margin-bottom: 10px;
     padding-top: 13px;
     width: 50%;
 }
-
-.dealer-icon{
-  height: 13px;
-  width: 13px;
-  margin-right: 9px;
+.dealer-icon {
+    height: 13px;
+    margin-right: 9px;
+    width: 13px;
 }
-
-.dealers-footer{
-    border-right: 1px solid #D8D8D8;
-    border-left: 1px solid #D8D8D8;
-    border-bottom: 1px solid #D8D8D8;
-    clear: both;
+.dealers-footer {
     background-color: #f6f6f6;
-    padding-top: 19px;
-    padding-left: 40px;
-    padding-bottom: 39px;
+    border-bottom: 1px solid #D8D8D8;
+    border-left: 1px solid #D8D8D8;
+    border-right: 1px solid #D8D8D8;
+    clear: both;
     height: 125px;
+    padding-bottom: 39px;
+    padding-left: 40px;
+    padding-top: 19px;
 }
-
-.dealers-footer> *{
-  color: #3F3F3F;
-  font-size: 14px;
+.dealers-footer> * {
+    color: #3F3F3F;
+    font-size: 14px;
 }
-
-.card-wrapper{
-      box-shadow: 1px 5px 20px 0px #EDEDED;
-      width: 100%;
-      margin: auto;
+.card-wrapper {
+    box-shadow: 1px 5px 20px 0px #EDEDED;
+    margin: auto;
+    width: 100%;
 }
-
-.dealers{
-      margin: 0% 5% 13% 5%;
-      display: flex;
-      flex-flow: wrap;
+.dealers {
+    display: flex;
+    flex-flow: wrap;
+    margin: 0% 5% 13% 5%;
 }
-
-.pool-pros-logo2{
-  height: 25px;
-  margin-top: 36px;
+.pool-pros-logo2 {
+    height: 25px;
+    margin-top: 36px;
 }
-
-.primary-footer{
-  background: #083D8C;
-  clear: both;
-}
-
-.connect{
-  color: white;
-  float: left;
-  margin-left: 45px;
-}
-
-.social-icons{
-  float: right;
-  margin-right: 45px;
-}
-.social-icons li{
-  display: inline-block;
-}
-
-.clearfix{
+.primary-footer {
+    background: #083D8C;
     clear: both;
 }
-
-.image-water-mobile{
-    height: 100px;
-    background: url(../../../images/water-image-desktop.jpg) top left repeat-x red;
+.connect {
+    color: white;
+    float: left;
+    margin-left: 45px;
+}
+.social-icons {
+    float: right;
+    margin-right: 45px;
+}
+.social-icons li {
+    display: inline-block;
+}
+.clearfix {
+    clear: both;
+}
+.image-water-mobile {
     background-size: cover;
+    background: url(../../../images/water-image-desktop.jpg) top left repeat-x red;
+    height: 100px;
     margin-top: 20px;
 }
-.facebook-icon{
-    width: 10px;
+.facebook-icon {
     height: 15px;
+    width: 10px;
 }
-
-.twitter-icon{
-  width: 18px;
-  height: 15px;
+.twitter-icon {
+    height: 15px;
+    width: 18px;
 }
-
-.youtube-icon{
-  width: 18px;
-  height: 15px;
+.youtube-icon {
+    height: 15px;
+    width: 18px;
 }
-
-.social-media{
-    padding-top: 25px;
+.social-media {
     padding-bottom: 39px;
+    padding-top: 25px;
 }
-
 hr {
-    width: 90%;
     margin-left: 5%;
+    width: 90%;
 }
-
-.secondary-footer{
+.secondary-footer {
     background: #216DDF;
     color: white;
     padding: 12px;
 }
-
-.footer-service-info{
+.footer-service-info {
     font-size: 13px;
     word-spacing: 3px;
 }
-
-.main-footer-info{
-  font-size: 13px;
-  word-spacing: 2px;
+.main-footer-info {
+    font-size: 13px;
+    word-spacing: 2px;
 }
-
 // Start modal css
 .contact-form-full-wrapper {
-input[type=text], textarea {
-    width: 100%; 
-    padding: 12px;  
-    border: 1px solid #D8D8D8;
-    border: 1px solid #ccc; 
-    border-radius: 1px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 30px; 
+    input[type=text], textarea {
+        border-radius: 1px;
+        border: 1px solid #ccc;
+        border: 1px solid #D8D8D8;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+        margin-top: 6px;
+        padding: 12px;
+        width: 100%;
+    }
+    input[type=submit] {
+        background-color: white;
+        border-radius: 4px;
+        border: none;
+        color: #0BC9C8;
+        cursor: pointer;
+        float: right;
+        padding: 12px 20px;
+    }
+    .contact-form-bg {
+        background: rgba(0, 0, 0, .7);
+        content: '';
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    .contact-form-full-wrapper {
+        display: none;
+    }
+    .contact-form-full {
+        background: white;
+        left: 50%;
+        margin-top: 100px;
+        max-width: 600px;
+        overflow: scroll;
+        position: absolute;
+        top: 0;
+        transform: translateX(-50%);
+        width: 95%;
+        z-index: 100;
+    }
+    /* Add a background color and some padding around the form */
+    
+    .form-container {
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        padding: 20px;
+    }
+    .contact-form> * {
+        color: #616161;
+        font-size: 14px;
+    }
+    .form-header {
+        background-color: #083D8C;
+        color: white;
+        padding: 20px;
+    }
+    .email {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    .form-header-message {
+        font-size: 26px;
+        font-weight: 500;
+    }
+    .form-message {
+        color: #616161;
+        font-size: 15px;
+        padding: 32px 20px 15px 20px;
+    }
+    #subject {
+        height: 200px
+    }
+    .yes-no-list li {
+        display: inline-block;
+        list-style: none;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+    .send-button {
+        color: #0BC9C8;
+        font-size: 16px;
+    }
+    // End modal CSS
 }
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: white;
-    color: #0BC9C8;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-//:before makes it so that the parent of the modile is not position fixed.  So not in the flow.
-.contact-form-bg {
-  position: fixed;
-  content: '';
-  background: rgba(0,0,0,.7);
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.contact-form-full-wrapper{
-  display: none;
-}
-
-.contact-form-full {
-  width: 95%;
-  max-width: 600px;
-  margin-top: 100px;
-  background: white;
-  overflow: scroll;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 100;
-}
-
-/* Add a background color and some padding around the form */
-.form-container {
-    border-radius: 5px;
-    background-color: #FFFFFF;
-    padding: 20px;
-}
-
-.contact-form> *{
-  color: #616161;
-  font-size: 14px;
-}
-
-.form-header{
-  background-color: #083D8C;
-  color: white;
-  padding: 20px;
-}
-.email { 
-  font-size: 14px; 
-  padding-bottom: 10px;
-}
-
-  .form-header-message {
-    font-size: 26px;
-    font-weight: 500;
-  }
-.form-message{
-  padding: 32px 20px 15px 20px;
-  font-size: 15px;
-  color: #616161;
-}
-#subject{
-  height:200px
-}
-
-.yes-no-list li{
-  display: inline-block;
-  list-style: none;
-  padding-top: 10px;
-  padding-right: 10px;
-}
-
-.send-button{
-  color: #0BC9C8;
-  font-size: 16px;
-}
-
-// End modal CSS
-}
-
 @media ( min-width: 1400px) {
-
-  .input-wrapper{
-    height: 39px;
-  }
-
-  .input-wrapper{
-   width: 119px;
-  }
-
-  .card-wrapper{
-    margin: 19px auto;
-
-  }
-
-  .card-wrapper{
-    width: 30%;
-  }
-
-  .hidden-desktop{
-    display: none;
-  }
-
-  .hidden-mobile{
-    display: block;
-  }
-
-  .header-contact{
-      background: #083D8C;
-      color: white;
-      text-align: right;
-      font-size: 12px;
-      padding-top: 16px;
-      padding-bottom: 16px;
-      padding-right: 27px;
-  }
-  .header-contact li {
-    display: inline-block;
-    margin-right: 50px;
-  }
-  .header-right li{
-    display: inline-block;
-    color: #083D8C;
-    font-size: 15px;
-    font-weight: 400;
-  }
-
-  .header-right{
-    float: right;
-    display: flex;
-    align-items: center;
-  }
-
-  .header-left{
-    float: left;
-  }
-
-  .options li{
-    margin-right: 50px;
-    font-size: 15px;
-  }
-
-  .second-header-desktop{
-    box-shadow: 0px 0px 15px #BBBBBB;
-    padding: 22px 70px;
-    overflow: hidden;
-  }
-
-  .banner{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      background: #F6F6F6;
-      border-radius: 4px;
-      margin-left: 70px;
-      margin-right: 70px;
-      border: 1px solid #f6f6f6;
-      padding-top: 25px;
-      padding-bottom: 25px;
-      
-    p {
-      font-size: 18px;
-      margin-right: 65px;
-      font-weight: 500;
+    .input-wrapper {
+        height: 39px;
     }
-    ul{
-     font-size: 14px;
+    .input-wrapper {
+        width: 119px;
     }
-    li {
-      margin-right: 35px;
+    .card-wrapper {
+        margin: 19px auto;
     }
-  }
-
-  .banner-dealer{
-    color: #216DDF;
-  }
-  .banner li{
-    display: inline-block;
-  }
-
-  .dealers{
-    margin: 2% 5% 5% 5%;
-  }
-
-  .dealer {
-    border-radius: 8px;
-    margin-right: 20px;
-    margin: 0px;
-    position: relative;
-    box-shadow: 1px 3px 6px 2px #D8D8D8;
-  }
-  .phone2-icon{
-    height: 30px;
-    width: 30px;
-  }
-  .desktop-phone-number{
-    font-size: 25px;
-  }
-  .name{
-      font-size: 26px;
-      font-weight: 500;
-      line-height: 26px;
-      min-height: 71px;
-  }
-  .connect{
-      margin-left: 553px;
-  }
-  .social-icons{
+    .card-wrapper {
+        width: 30%;
+    }
+    .hidden-desktop {
+        display: none;
+    }
+    .hidden-mobile {
+        display: block;
+    }
+    .header-contact {
+        background: #083D8C;
+        color: white;
+        font-size: 12px;
+        padding-bottom: 16px;
+        padding-right: 27px;
+        padding-top: 16px;
+        text-align: right;
+    }
+    .header-contact li {
+        display: inline-block;
+        margin-right: 50px;
+    }
+    .header-right li {
+        color: #083D8C;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .header-right {
+        align-items: center;
+        display: flex;
+        float: right;
+    }
+    .header-left {
+        float: left;
+    }
+    .options li {
+        font-size: 15px;
+        margin-right: 50px;
+    }
+    .second-header-desktop {
+        box-shadow: 0px 0px 15px #BBBBBB;
+        overflow: hidden;
+        padding: 22px 70px;
+    }
+    .banner {
+        background: #F6F6F6;
+        border-radius: 4px;
+        border: 1px solid #f6f6f6;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 70px;
+        margin-right: 70px;
+        padding-bottom: 25px;
+        padding-top: 25px;
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            margin-right: 65px;
+        }
+        ul {
+            font-size: 14px;
+        }
+        li {
+            margin-right: 35px;
+        }
+    }
+    .banner-dealer {
+        color: #216DDF;
+    }
+    .banner li {
+        display: inline-block;
+    }
+    .dealers {
+        margin: 2% 5% 5% 5%;
+    }
+    .dealer {
+        border-radius: 8px;
+        box-shadow: 1px 3px 6px 2px #D8D8D8;
+        margin-right: 20px;
+        margin: 0px;
+        position: relative;
+    }
+    .phone2-icon {
+        height: 30px;
+        width: 30px;
+    }
+    .desktop-phone-number {
+        font-size: 25px;
+    }
+    .name {
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 26px;
+        min-height: 71px;
+    }
+    .connect {
+        margin-left: 553px;
+    }
+    .social-icons {
         margin-right: 566px;
-  }
-
-  .social-icons li{
-    margin-right: 8px;
-  }
-  .dealers-footer{
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-  }
-  .input{
-      height: 24px;
-      width: 92px;
-      color: #216DDF;
-  }
-
-  .options{
-    margin-top: -14px;
-  }
-  .image-water-desktop{
-    background-size: cover;
-    background: url(../../../images/water-image-desktop.jpg) top left repeat-x;
-    height: 200px;
-    margin-top: 20px;
-
-  }
-
- /*  .top-header-desktop{
-    box-shadow: 10px 10px 5px #888888;
-  } */
-
+    }
+    .social-icons li {
+        margin-right: 8px;
+    }
+    .dealers-footer {
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
+    .input {
+        color: #216DDF;
+        height: 24px;
+        width: 92px;
+    }
+    .options {
+        margin-top: -14px;
+    }
+    .image-water-desktop {
+        background-size: cover;
+        background: url(../../../images/water-image-desktop.jpg) top left repeat-x;
+        height: 200px;
+        margin-top: 20px;
+    }
 }
-
-.menu-dropdown{
+.menu-dropdown {
     border-bottom: 5px solid #0BC9C8;
     border-top: 5px solid #0BC9C8;
-/*     box-shadow: 10px 10px 10px 10px #BBBBBB;
- */}
-
-.menu-dropdown-header{
-    position: relative;
-    position: relative;
-    height: 80px;
-    text-align: center;
-  h1{
-    color: #01529E;
-    font-size: 18px;
-    padding-top: 36px;
-    font-weight: 400;
-  }
-  img{
-    height: 17px;
-    position: absolute;
-    right: 25px;
-    top: 14px;
-    widows: 17px;
-  }
 }
-
-
+.menu-dropdown-header {
+    height: 80px;
+    position: relative;
+    position: relative;
+    text-align: center;
+    h1 {
+        color: #01529E;
+        font-size: 18px;
+        font-weight: 400;
+        padding-top: 36px;
+    }
+    img {
+        height: 17px;
+        position: absolute;
+        right: 25px;
+        top: 14px;
+        widows: 17px;
+    }
+}
 //Begin CSS for menu modal
 .menu-option {
     background: #f6f6f6;
-    padding: 25px 15px 25px 15px;
-    margin-bottom: 2px;
     color: #616161;
     font-size: 18px;
+    margin-bottom: 2px;
+    padding: 25px 15px 25px 15px;
 }
-
-.next-link{
-  color: #0BC9C8;
-  font-size: 20px;
-  text-decoration: none;
-  position: absolute;
-  right: 20px;
+.next-link {
+    color: #0BC9C8;
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    text-decoration: none;
 }
-
-.menu-option-wrapper{
-  position: relative;
+.menu-option-wrapper {
+    position: relative;
 }
-
-.menu-dropdown-wrapper{
-   display: none;
-   position: relative;
+.menu-dropdown-wrapper {
+    display: none;
+    position: relative;
 }
-
-.menu-dropdown{
-    position: fixed;
-    overflow: scroll;
-    top: 52px;
-    z-index: 99;
-    width: 100%;
+.menu-dropdown {
     background: white;
+    overflow: scroll;
+    position: fixed;
+    top: 52px;
+    width: 100%;
+    z-index: 99;
 }
-
 //End CSS for menu modal
-::placeholder{
-  color: #216DDF;
-  font-size: 12px;
-  font-weight: 700;
+::placeholder {
+    color: #216DDF;
+    font-size: 12px;
+    font-weight: 700;
 }
-
-.hr-desktop{
-  position: absolute;
-  top: 79px;
+.hr-desktop {
+    position: absolute;
+    top: 79px;
 }
