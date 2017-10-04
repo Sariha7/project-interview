@@ -5,43 +5,50 @@
 
 jQuery( document ).ready( function( $ ) {
 //attches it to the DOM instead of the mail button because the mail button can be replaced 
-	
+	//below shows the js-modal class
 	$('.js-modal').hide();
 	$( document ).on( 'click', '.mail-button', function() {
 		$( '.js-modal' ).show();
 	});
-
+	//hides the js-modal class if you click on the overlay
 	$( '.contact-form-bg' ).click( function() {
 		$( '.js-modal' ).hide();
 	});
-
+//click on the menu icon and slow the menu modal
   $( '.hamburger-bars' ).click(function(){
     console.log('clicked');
       $('.js-menu-modal').show();
     });
+//click on the x and the menu hides
   $('.x-vector').click(function(){
   	  $('.js-menu-modal').hide();
   });
 
 });
 
-
+//when the window loads run the following function to get the data from the JSON form
 $(window).on('load',function(){
+	//set a constant so that you can pull it later
 	const api = {
 		//getting the JSON file
 		base: 'dealers.json'
 	}
+
+// can do get, post, put, delete.  In this case we want to get information so we use get
 $.get(`${api.base}`,function(data, status){
 
-	//why is it not dealers.data for the below instead of data.dealers?
+//?????????????????????????????????
+	//seting dealers to the data from the dealers
 	const dealers = data.dealers;
 	const dealersWrapper = $('.dealers');
 	dealersWrapper.html( '' );
 
 //do I need an index here??
 	dealers.forEach(function(dealer, index){
+		//if the string in the file for sun is empty then say closed, otherwise put whatever the file says s 
 		dealer.data.weekHours.sun = dealer.data.weekHours.sun === '' ? 'Closed' : dealer.data.weekHours.sun;
 
+//at this point, all html in the current index.html file that is inside the card-wrapper div is useless beacuse we are replacing it
 		dealersWrapper.append(`
 			<div class="card-wrapper">
 				<div class="dealer">
@@ -70,9 +77,11 @@ $.get(`${api.base}`,function(data, status){
 	               </div>
 	           </div>`);
 
+//setting a new constant so we can pull the information from the certifications array within the data array in the dealer object
 		const certifications = dealer.data.certifications;
 		const certificationsList = $(`.js-certifications-list-${index}`);
 
+//loop over the certifications.  If it has the certiification add the icon name so that we can update the html below
 		certifications.forEach(function (cert) {
 			let iconName;
 			switch (cert) {
